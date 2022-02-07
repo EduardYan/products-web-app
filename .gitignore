@@ -1,4 +1,3 @@
+# some ignores
 env
 __pycache__
-.env
-.pyc
