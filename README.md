@@ -9,6 +9,13 @@ git clone https://github.com/EduardYan/products-web-app.git
 cd products-web-app/
 ```
 
+### Sqlite3 Database.
+Work with this enviroment variable __(for default to use this path)__:
+
+```bash
+SQLITE_PATH="./database/products.db"
+```
+
 
 ### Dependencies.
 
