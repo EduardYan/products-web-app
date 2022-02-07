@@ -1,0 +1,122 @@
+/*
+  Custom styles
+  for the website.
+*/
+
+
+/* Background */
+
+body {
+  background: #283048;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #859398, #283048);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #859398, #283048);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+/* global container */
+
+#principal-container {
+  margin: 3rem auto 9rem auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5rem;
+}
+
+#title-product {
+  font-weight: lighter;
+}
+
+
+/* Custom background for card */
+
+.card {
+  background-color: #666;
+}
+
+.card .form-control {
+  background-color: #6e6e6e;
+  border-color: #6e6e6e;
+}
+
+
+/* View of products */
+
+.view-products {
+  padding-top: 2.5rem;
+}
+
+
+/* FOR EACH PRODUCT */
+
+.product {
+  background-color: #555555;
+  margin-bottom: 3rem;
+  transition: box-shadow .5s ease;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product:hover {
+  box-shadow: .4rem .4rem rgba(0, 0, 0, .1);
+}
+
+.actions-buttons {
+  margin-right: 5rem;
+}
+
+#principal-footer {
+    background-color: #546663;
+}
+
+/* links from footer */
+.links {
+  width: 50%;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .product {
+    display: block;
+  }
+  
+}
+
+@media (max-width: 700px) {
+  #principal-container {
+    column-gap: 1.5rem;
+  }
+  .product {
+    display: block;
+  }
+
+  .actions-buttons {
+    margin-right: 1rem;
+  }
+
+  .actions-buttons a {
+    margin: .5rem 2rem;
+  }
+  
+}
+
+@media (max-width: 500px) {
+  #principal-container {
+    grid-template-columns: 1fr;
+  }
+
+  .actions-buttons {
+    margin-right:0;
+  }
+
+  .actions-buttons a {
+    margin: 1rem 2rem;
+  }
+
+  .links {
+    width: 100%;
+  }
+  
+}

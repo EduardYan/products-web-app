@@ -1,0 +1,48 @@
+/*
+  Styles for the page of settings
+*/
+
+/* for show in block not grid */
+#principal-container {
+  display: block;
+}
+
+/* all display */
+#save-button-settings {
+  width: 50%;
+}
+
+#save-button-settings button {
+  width: 50%;
+}
+
+@media (max-width: 900px) {
+  #save-button-settings {
+    width: 100%;
+  }
+
+  #save-button-settings button {
+    width: 70%;
+  }
+}
+
+@media (max-width: 700px) {
+  #save-button-settings {
+    width: 100%;
+  }
+
+  #save-button-settings button {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 500px) {
+  #save-button-settings {
+    width: 100%;
+  }
+
+  #save-button-settings button {
+    width: 100%;
+  }
+}

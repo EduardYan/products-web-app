@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css/settings.css') }}">
+
+<form class="card" action="{{ url_for('products.change_settings_route') }}" method="POST">
+  <div class="card-header">
+    <h2 class="text-white text-center">Settings</h2>
+  </div>
+  <div class="card-body">
+    <div class="form-control">
+      <label class="h5 text-white" for="view-style">View of products for see.</label>
+      <select class="form-select my-3 w-50" name="view-style" id="view-style">
+        <!-- OPTIONS TO USE -->
+        <option value="{{ settings.view_style }}" selected>{{ settings.view_style }}</option>
+        <option value="All.">All.</option>
+        <option value="Mayor or equal to 100.">Mayor or equal to 100 dolars.</option>
+        <option value="Mayor or equal to 300.">Mayor or equal to 300 dolars.</option>
+        <option value="Mayor or equal to 500.">Mayor or equal to 500 dolars.</option>
+        <option value="Mayor or equal to 1000.">Mayor or equal to 1000 dolars.</option>
+      </select>
+
+    </div>
+    <div class="mx-auto text-center my-3" id="save-button-settings">
+      <button class="btn btn-success" type="submit" id="">Save</button>
+    </div>
+  </div>
+</form>
+
+
+{% endblock %}

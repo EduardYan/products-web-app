@@ -1,0 +1,21 @@
+/*
+  Styles for 
+  the about page.
+*/
+
+.about {
+  border-radius: .3rem;
+  transition: box-shadow .3s ease;
+}
+
+.about:hover {
+  box-shadow: .3rem .3rem rgba(0, 0, 0, .4);
+}
+
+#principal-container {
+  display: block;
+}
+
+#principal-container {
+  margin-bottom: 21%;
+}

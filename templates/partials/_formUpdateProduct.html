@@ -1,0 +1,33 @@
+<!-- FORMULARY TO USE 
+  FOR UPDATE A NEW PRODUCT -->
+<form class="card" action="{{ url_for('products.update_product', id = product.id) }}" method="POST">
+  <div class="card-header">
+    <!-- TITLE -->
+    <h3 class="text-white text-start" id="title-product">Update it!</h3>
+
+  </div>
+  <div class="card-body">
+    <label class="text-white" for="newName">New Product Name</label>
+    <div class="form-control">
+      <input type="text" id="newName" name="newProductName" autofocus value="{{ product.name }}">
+    </div>
+
+    <label class="text-white" for="newPrice">New Product Price</label>
+    <div class="form-control">
+      <input type="number" id="newPrice" name="newProductPrice" value="{{ product.price }}">
+    </div>
+
+    <label class="text-white" for="newDate">Date</label>
+    <div class="form-control">
+      <input type="date" id="newDate" name="newProductDate" value="{{ product.date }}">
+
+    </div>
+
+    <!-- UPDATE BUTTON -->
+    <div class="w-100 mx-auto text-center mt-4 mb-3">
+      <button class="btn btn-success w-50" type="submit">Update</button>
+    </div>
+
+  </div>
+
+</form>
